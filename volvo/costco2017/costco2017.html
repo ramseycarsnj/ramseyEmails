@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+  <head>
+    <meta charset="utf-8">
+    <title>We've got connections.</title>
+    <style media="screen">
+      /*COLORS*/
+      /*VOLVO BLUE: #003057*/
+      /*VOLVO BLACK: #333132*/
+
+      html, body, div, span, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, address, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strong, sub, sup, var,
+      b, u, i, dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+      	margin: 0;
+      	padding: 0;
+      	border: 0;
+      	font-size: 100%;
+      	vertical-align: baseline;
+      }
+      body {
+      	line-height: 12;
+      }
+      ol, ul {
+      	list-style: none;
+      }
+      h1 {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        color: #003057;
+        font-size: 50px;
+        line-height: 1;
+      }
+
+      h6 {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        color: #003057;
+        font-size: 40px;
+        line-height: 1;
+      }
+
+      h3 {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        color: #003057;
+        font-size: 24px;
+      }
+      table {
+        border-collapse: collapse;
+      	border-spacing: 0;
+      }
+      p {
+        margin: 2px 0;
+        padding:0px 70px 0 70px;
+        line-height: 1.5;
+      }
+      .mainCta {
+        border: 1px solid #003057;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        padding: 12px;
+        text-align: center;
+        display: block;
+        background-color: #003057;
+        color: #ffffff;
+        width: 300px;
+        margin: auto;
+        text-decoration: none;
+      }
+      .secondaryCta {
+        border: 1px solid #003057;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        height: 40px;
+        background-color: #ffffff;
+        color: #003057;
+        margin: auto;
+        text-decoration: none;
+      }
+      .social {
+        width: 30px;
+        margin: auto;
+        padding: 10px 7px 10px 7px;
+      }
+      #bodyContainer {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+        border: 0;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        color: #333132;
+        background-color: #003057
+      }
+      #emailBody {
+        width: 650px;
+        padding: 0px;
+        margin: auto;
+        border: 0;
+        color: #333132;
+        background-color: #ffffff;
+      }
+      #volvoIronMark {
+        width: 57px;
+        margin: auto;
+        padding: 29px;
+        display: block;
+      }
+      #ironMarkArea {
+        background-color: #000000;
+        width: 650px;
+      }
+      #emailContent {
+        display: block;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        color: #333132;
+        width: 650px;
+        background-color: #ffffff;
+      }
+      #salutation {
+        padding: 30px 30px 10px 30px;
+        display: block;
+      }
+      #pricingBuilder {
+        background-color: #FAFAFA;
+        width: 650px;
+        margin: 0;
+        padding: 0 0 30px 0;
+        border: 0;
+      }
+      #leftPriceContent {
+        width: 370px;
+        padding: 0 0 30px 0;
+        margin: 0;
+        border: 0;
+      }
+      #rightPriceContent {
+        width: 280px;
+        text-align: right;
+        padding: 0 0 30px 0;
+        margin: 0;
+        border: 0;
+      }
+      #modelArea {
+        font-size: 20px;
+        padding: 30px 0 0 30px;
+        vertical-align: top;
+      }
+      #priceText {
+        padding: 0px 30px 0 0;
+      }
+      #priceDisplay {
+        padding: 0 30px 0 0;
+      }
+      #imageArea {
+        margin: 15px 0;
+        padding: 0;
+        border: 0;
+        display: inline-block;
+        width: 370px;
+      }
+      #packageHeading {
+        padding: 10px 0 10px 0;
+        text-align: left;
+      }
+      #packageBuilder li {
+        text-align: left;
+      }
+      #optionsHeading {
+        padding: 10px 0 10px 0;
+        text-align: left;
+      }
+      #accessoryBuilder {
+        text-align: left;
+      }
+      #priceGuarentee {
+        padding: 20px 30px 0px 30px;
+        display: block;
+      }
+      #footer {
+        padding: 30px 0 50px 0;
+        background-color: #000000;
+      }
+      #footerTable {
+        text-align: center;
+        width: 650px;
+        margin: auto;
+        background-color: #000000;
+        color: #ffffff;
+        margin: 0px;
+        border: 0px;
+      }
+      #footerTable td {
+        vertical-align: top;
+        padding: 10px 0 0px 0;
+        margin: 0px;
+        border: 0px;
+      } #links a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      #signature {
+        padding: 0 0 30px 30px;
+        line-height: 1.3;
+      }
+      #signature a {
+        color: #000000;
+      }
+      #userImage {
+        width: 120px;
+        border-radius: 100%;
+        margin: auto;
+      }
+      #signatureTable td {
+        display: inline-block;;
+      }
+      #signatureContentLeft {
+        width: 430px;
+        padding-left: 0px;
+      }
+
+      #signatureContentRight {
+        padding: 10px 0 0 0;
+        vertical-align: bottom;
+      }
+
+    </style>
+  </head>
+  <body style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;line-height: 1.5;">
+    <center>
+
+      <div id="bodyContainer" style="margin: 0 auto;padding: 50px 0;border: 0;font-size: 13px;vertical-align: baseline;height: 100%;width: 100%;font-family: Arial, sans-serif;font-weight: normal;color: #333132;background-color: #003057;">
+
+<div id="emailBody" style="margin: auto;padding: 0px;border: 0;font-size: 100%;vertical-align: baseline;width: 650px;color: #333132;background-color: #ffffff;">
+  <table id="bodyTable" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;border-collapse: collapse;border-spacing: 0;">
+    <tr id="emailHeader" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+      <td style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+        <table id="ironMarkArea" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;border-collapse: collapse;border-spacing: 0;background-color: #000000;width: 650px;">
+
+          <tr style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+            <td style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+              <a href="http://volvocarsramsey.com/" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"><img src="http://i.imgur.com/AnRvUxM.png" alt="Volvo Cars Iron Mark" id="volvoIronMark" style="margin: auto;padding: 29px;border: 0;font-size: 100%;vertical-align: baseline;width: 57px;display: block;"></a>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+
+
+    <!-- END OF HEADER AREA -->
+
+
+
+
+    <tr style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+      <td style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+
+        <table id="emailContent" style="margin: 0;padding: 0;border: 0;font-size: 13px;vertical-align: baseline;border-collapse: collapse;border-spacing: 0;display: block;font-family: Arial, sans-serif;font-weight: normal;color: #333132;width: 650px;background-color: #ffffff;">
+          <a href="http://www.volvocarsramsey.com/costco-auto-program.htm">  <img src="costco.png" width="650px;" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"></a>
+
+          <tr style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+            <td style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+              <div id="salutation" style="margin: 0;padding: 30px 30px 10px 30px;border: 0;font-size: 100%;vertical-align: baseline;display: block;">
+                  <h6><center>We've got connections.</h6></center>
+                <p style="text align:center; margin: 2px 0;padding: 0px 70px 0 70px;border: 0;font-size: 100%;vertical-align: baseline;line-height: 1.5;">
+
+                  <br>For a limited time, Costco members receive an exclusive Special Offer on eligible Volvo models Aug. 1 - Oct. 2, 2017!</center><br><br>
+
+                  <h3><center>You'll recieve:<center></h3>
+
+
+                    <center>• Volvo A-Plan Pricing</text><br>
+                    • Applicable Volvo rebates and incentives<br>
+                    <h1>+</h1>
+                    <h3>Costco member incentives: </h3>
+	                   • $750 on 2017 and 2018 S60, V60, V90 Cross Country, and XC90 models<br>
+	                    • $750 on 2017 XC60<br>
+	                     • $3,000 on 2017 and 2018 S90 models
+                </p>
+                <br>
+                <a href="http://www.volvocarsramsey.com/new-inventory/index.htm"><img src="takealook.png" width="620px"></a>
+              </div>
+            </td>
+          </tr>
+
+
+
+            <table id="emailContent" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;border-collapse: collapse;border-spacing: 0;">
+              <!--
+              <a href="http://www.volvocarsramsey.com/new/Volvo/2017-Volvo-S60-ramsey-nj-dd4bb81e0a0e0a175837ce580353bca6.htm" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"><img src="http://ramseycarsnj.github.io/ramseyEmails/volvo/fathersday2017/s60.png" width="650px;" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"></a>
+              <a href="http://www.volvocarsramsey.com/new/Volvo/2017-Volvo-XC60-ramsey-nj-a281196f0a0e0a175fe7952972b56086.htm" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"><img src="http://ramseycarsnj.github.io/ramseyEmails/volvo/fathersday2017/xc60.png" width="650px;" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"></a>
+              <a href="http://www.volvocarsramsey.com/new/Volvo/2017-Volvo-S90-ramsey-nj-3dbc6b040a0e0ae76cb81e6792932e17.htm" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"><img src="http://ramseycarsnj.github.io/ramseyEmails/volvo/fathersday2017/s90.png" width="650px;" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"></a>
+              <a href="http://www.volvocarsramsey.com/new/Volvo/2017-Volvo-XC90-ramsey-nj-88f283c40a0e0adf47fda79cfecd02c5.htm" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"><img src="http://ramseycarsnj.github.io/ramseyEmails/volvo/fathersday2017/xc90.png" width="650px;" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"></a>
+            -->
+            <!--
+
+              <tr style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+                <td style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+                  <div id="salutation" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+                    <p style="margin: 2px 0;padding: 0px 70px 0 70px;border: 0;font-size: 100%;vertical-align: baseline;line-height: 1.5;">
+                      Like being social? Socialize with us! Follow us on all popular to say up today with news, offers, and great content.
+                      <br><br>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            -->
+          <!-- END OF GUARENTEE SECTION -->
+          <tr style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+            <td style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+              <div id="footer" style="margin: 0;padding: 30px 0 50px 0;border: 0;font-size: 100%;vertical-align: baseline;background-color: #000000;">
+
+                <table id="footerTable" style="margin: 0px;padding: 0;border: 0px;font-size: 100%;vertical-align: baseline;border-collapse: collapse;border-spacing: 0;text-align: center;width: 650px;background-color: #000000;color: #ffffff;">
+                  <tr style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+                    <td id="socialIcons" style="margin: 0px;padding: 10px 0 0px 0;border: 0px;font-size: 100%;vertical-align: top;">
+                      <p style="margin: 2px 0;padding: 0px 190px 0 190px;border: 0;font-size: 100%;vertical-align: baseline;line-height: 1.5;">
+                      Like being social? Socialize with us! Follow us on all popular to say up today with news, offers, and great content.
+                    </p>
+                      <br>
+                      <a href="http://www.facebook.com/RamseyVolvo/" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"><img src="http://i.imgur.com/SDL88zq.png" alt="facebook" class="social" style="margin: auto;padding: 10px 7px 10px 7px;border: 0;font-size: 100%;vertical-align: baseline;width: 30px;"></a>
+                      <a href="http://www.instagram.com/ramseyvolvo/" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"><img src="http://i.imgur.com/Hzw6XYB.png" alt="instagram" class="social" style="margin: auto;padding: 10px 7px 10px 7px;border: 0;font-size: 100%;vertical-align: baseline;width: 30px;"></a>
+                      <a href="http://twitter.com/ramseyvolvonj/" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"><img src="http://i.imgur.com/4ja8b7D.png" alt="twitter" class="social" style="margin: auto;padding: 10px 7px 10px 7px;border: 0;font-size: 100%;vertical-align: baseline;width: 30px;"></a>
+                      <a href="http://www.youtube.com/user/RamseyVolvoNJ/" style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;"><img src="http://i.imgur.com/XAVvqdd.png" alt="youtube" class="social" style="margin: auto;padding: 10px 7px 10px 7px;border: 0;font-size: 100%;vertical-align: baseline;width: 30px;"></a>
+                    </td>
+                  </tr>
+
+                  <tr style="margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;">
+                    <td id="links" style="margin: 0px;padding: 10px 0 0px 0;border: 0px;font-size: 100%;vertical-align: top;">
+                      <a href="http://volvocarsramsey.com/" alt="Volvo Cars Ramsey" style="margin: 0;padding: 0;border: 0;font-size: 14px;vertical-align: baseline;color: #ffffff;text-decoration: none;display: block;line-height: 1.5;">Volvo Cars Ramsey</a>
+
+                      <a href="http://www.volvocarsramsey.com/dealership/directions.htm" alt="Volvo Cars Ramsey" style="margin: 0;padding: 0;border: 0;font-size: 14px;vertical-align: baseline;color: #ffffff;text-decoration: none;display: block;line-height: 1.5;"> 585 RT 17S Ramsey, NJ	07446</a>
+
+                      <a href="tel:8883190377" alt="Volvo Cars Ramsey" style="margin: 0;padding: 0;border: 0;font-size: 14px;vertical-align: baseline;color: #ffffff;text-decoration: none;display: block;line-height: 1.5;">888.319.0377</a>
+                        <br><hr width="65%"><br>
+                        <p style="font-size:70%;">
+                        2017 and 2018 s60, v60, s60cc, v60cc, v90cc, xc90 recieve $750 off. 2017 XC60 also recieves $750. 2017 and 2018 s90s recieve $3000 off. Offer ends 10/02/2017. Volvo reserves the right to cancel, amend, or revoke any program at anytime upon the written notification, and the retailer agrees that it will make no claim for anticipaed benifits or lost opportunity under a cancelled program. Offer is open to all Costco Members that are members as of July 31, 2017. Customers who identify themselves as eligible will need to provide a copy of the email containing the A-Plan Elite PIN number. A-Plan PIN numbers can be validated on the new SSA portal located in the A-Plan website (aplanbyvolvo.com)
+                        </p>
+                    </td>
+                  </tr>
+                </table>
+
+              </div>
+            </td>
+          </tr>
+
+
+          <br>
+        </table>
+      </table></td>
+    </tr>
+
+
+
+
+
+  </table>
+
+</div>
+
+      </div>
+
+    </center>
+  </body>
+</html>
