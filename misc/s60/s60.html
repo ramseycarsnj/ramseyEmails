@@ -216,6 +216,23 @@ p {
 }
 
 
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+
 @media screen and (max-width: 64rem){
   .col{
     width: calc(50% - 2rem);
@@ -248,7 +265,10 @@ p {
 </center>
 
 <center>
+  <div class="video-container">
   <iframe width="800" height="450" src="https://www.youtube.com/embed/8qXhyu0TZCE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
   <p class="credits">
     Credits: Auto Critic Steve Hammes
   </p>
