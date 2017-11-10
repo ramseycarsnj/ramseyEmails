@@ -16,7 +16,7 @@ font {
 
   .container {
   width: 940px;
-  background-color: #ffffff;
+  background-colors: #ffffff;
   color: #000000;
   padding: 0px;
   position: relative;
@@ -247,7 +247,7 @@ text-align: center; }
 
   @media (max-width: 400px) {
   .container {
-    width: 360px;
+    width: 320px;
     flex-direction: column; }
   .specialContent {
     width: 100%; }
