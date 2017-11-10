@@ -247,7 +247,7 @@ text-align: center; }
 
   @media (max-width: 400px) {
   .container {
-    width: 400px;
+    width: 380px;
     flex-direction: column; }
   .specialContent {
     width: 100%; }
