@@ -1,9 +1,7 @@
 html, body {
-    margin: 0px;
+    margin: 0 0 0 40px;
     padding: 0px;
     background: url("");
-    text-align: center;
-    text-align: center;
 }
 
 font {
@@ -23,7 +21,6 @@ font {
   margin: 0;
   border: px solid #E3E3E3;
   text-align: center;
-
   font-family: Helvetica, sans-serif; }
 
 .intro {
@@ -64,7 +61,7 @@ font {
 
 .carousel {
   position: relative;
-  text-align: :
+  text-align: center;
   margin-top: 26px;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -103,7 +100,7 @@ text-align: center; }
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */ }
+
 }
 
 
