@@ -296,13 +296,14 @@ text-align: center; }
     text-decoration: none;
     padding: 10px;
     font-size: 15px;
+    display: block;
     text-align: center; }
   .linkButton:hover {
     color: #ffffff;
     text-decoration: none;
     padding: 10px;
     display: block;
-    font-size: 25px;
+    font-size: 15px;
     text-align: center; }
   .carousel-control.next {
     font-size: 20px;
