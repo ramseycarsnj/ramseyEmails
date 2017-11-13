@@ -233,7 +233,8 @@ font {
   	padding-bottom:56.25%;
   	padding-top:20px;
   	height:0;
-  	overflow:hidden;
+  	overflow:hidden
+    max-width: 700px;
   }
 
 .video-container iframe, .video-container object, .video-container embed {
