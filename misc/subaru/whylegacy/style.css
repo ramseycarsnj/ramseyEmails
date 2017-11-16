@@ -27,6 +27,18 @@ font {
   max-width: 80rem;
   }
 
+.top {
+    text-align: center;
+    line-height: 50%;
+  }
+
+.sub{
+    text-align: center;
+    line-height: 0%;
+    font-weight: 100;
+    font-size: 1.4em;
+  }
+
 .intro {
   text-align: center;
 }
